@@ -7,8 +7,8 @@ package first;
  * 2. 실행용-main()있다.
  * 컨트롤+f11 저장과동시에 저장하기
  */
-//import java.lang.*;//이클립스 자동으로 삽입
-public class HiSecond {// 접근제한자(public)공동의,공용,누구든지 접근할수 있다.
+//import java.lang.*;   //이클립스 자동으로 삽입
+public class HiSecond { // 접근제한자(public)공동의,공용,누구든지 접근할수 있다.
 						// 클래스이름:대문자로 시작(인터페이스)
 	public static void main(String[] args) {// 매서드=함수:소문자로 시작()-프로그램의 시작담당
 		System.out.println("문자열 String-입력한 그대로 출력");
@@ -24,13 +24,13 @@ public class HiSecond {// 접근제한자(public)공동의,공용,누구든지 �
 		int n1;// 정수 변수 선언
 		n1 = 30;// 변수(이름있는 메모리) 안에 30을 대입(초기값)
 		// 변하는 값을 저장
-		// 상수 이름없는 메모리(정수int4바이트,실수double8바이트)
+		// 상수 이름없는 메모리(정수 int 4바이트,실수 double 8바이트)
 		int n2 = 70; // 정수 변수 선언 동시에 초기값;
 		byte n3 = 50, n4 = 90;
 		short n5 = 90;
-		n2 = n3;// 변수만int = byte (int->byte으로 자동 형변환 되어 대입)
+		n2 = n3;// 변수(변하는 수)만int = byte (int->byte으로 자동 형변환 되어 대입)
 		long n6 = 990000000L;//
-		// L은 상수때문에 붙인다.
+		// L은 상수(변하지 않는수)때문에 붙인다.
 		// 상수:이름없는 메모리
 		System.out.println(n1 + n3);// int + byte
 		byte n7 = (byte) (n3 + n4);// byte + byte
@@ -42,14 +42,14 @@ public class HiSecond {// 접근제한자(public)공동의,공용,누구든지 �
 		System.out.println(n7);// 데이터 손실
 		System.out.println(n8);// 결과 정확
 		// 자동 줄맞춤 컨트롤 쉬프트 에프
-		//'a'->메모리에 97의 2진수(연산 가능)
-		System.out.println('a');//'문자' 'a' "a" "문자열"
+		// 'a'->메모리에 97의 2진수(연산 가능)
+		System.out.println('a');// '문자' 'a' "a" "문자열"
 		System.out.println('A');
-		System.out.println((int)'a');//10진수 97
-		System.out.println((int)'A');//10진수 65
+		System.out.println((int) 'a');// 10진수 97
+		System.out.println((int) 'A');// 10진수 65
 		System.out.println('가');
-		System.out.println((int)'가');//44032
-		System.out.println((char)44032);//정수를 문자로 강제형변환
+		System.out.println((int) '가');// 44032
+		System.out.println((char) 44032);// 정수를 문자로 강제형변환
 		/***** 실수 *****/
 		float f = 1.23f;// 4=4
 		double d = 1.23;
@@ -63,8 +63,9 @@ public class HiSecond {// 접근제한자(public)공동의,공용,누구든지 �
 		System.out.println(f);// 50.0
 
 		d = 20 + 30.0;// 정수(int)+실수(double)
-			// =>실수20.0+30.0=>50.0(결과 double)
-			// 자바는 아세키 코드가 아니라 유니코드(전세계의 언어를 다표현한 언어)를 사용한다.
+		// =>실수20.0+30.0=>50.0(결과 double)
+		// 자바는 아세키 코드가 아니라 유니코드(전세계의 언어를 다표현한 언어)를 사용한다.
+	
 	}// 프로그램의 끝
 
 }
